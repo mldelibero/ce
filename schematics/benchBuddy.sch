@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 10:01:09 PM EDT
+EESchema Schematic File Version 2  date Sat 05 Oct 2013 10:04:00 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -51,15 +51,20 @@ F0 "terminalBlock" 60
 F1 "terminalBlock.sch" 60
 $EndSheet
 $Sheet
-S 7350 2850 1750 1000
+S 7350 2600 1750 1350
 U 524F7985
 F0 "fanCtrl" 60
 F1 "fanCtrl.sch" 60
-F2 "FAN_IN" I L 7350 3100 60 
-F3 "TACH_OUT" O L 7350 3400 60 
-F4 "TACH" O R 9100 3400 60 
-F5 "PWR-" O R 9100 3100 60 
-F6 "PWR+" O R 9100 2950 60 
+F2 "FAN_IN" I L 7350 2800 60 
+F3 "TACH_OUT" O L 7350 3000 60 
+F4 "TACH" O R 9100 3200 60 
+F5 "PWR-" O R 9100 3000 60 
+F6 "PWR+" O R 9100 2800 60 
+F7 "SCLK" I L 7350 3600 60 
+F8 "CS_N" I L 7350 3700 60 
+F9 "MISO" I L 7350 3500 60 
+F10 "MOSI" I L 7350 3400 60 
+F11 "Current Measure" O L 7350 3800 60 
 $EndSheet
 $Sheet
 S 7300 1350 1800 1000
