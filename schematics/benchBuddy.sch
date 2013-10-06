@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:15:56 PM EDT
+EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:39:23 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -55,11 +55,11 @@ S 7350 2850 1750 1000
 U 524F7985
 F0 "fanCtrl" 60
 F1 "fanCtrl.sch" 60
-F2 "FAN_IN" I R 9100 3100 60 
-F3 "TACH_OUT" O R 9100 3400 60 
-F4 "TACH" O L 7350 3400 60 
-F5 "PWR-" O L 7350 3100 60 
-F6 "PWR+" O L 7350 2950 60 
+F2 "FAN_IN" I L 7350 3100 60 
+F3 "TACH_OUT" O L 7350 3400 60 
+F4 "TACH" O R 9100 3400 60 
+F5 "PWR-" O R 9100 3100 60 
+F6 "PWR+" O R 9100 2950 60 
 $EndSheet
 $Sheet
 S 7300 1350 1800 1000
