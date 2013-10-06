@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:13:31 PM EDT
+EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:15:56 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -44,6 +44,14 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 5400 850  0    60   ~ 0
+Instrumentation Amplifier Clone\n
+Text Notes 2800 1900 0    60   ~ 0
+16-24bit ADC
+Text Notes 8000 2400 0    60   ~ 0
+Analog TC Input
+Text Notes 5850 4800 0    60   ~ 0
+General Temperauter Sensor
 Connection ~ 4050 4050
 Wire Wire Line
 	4050 4450 4050 2500
@@ -298,10 +306,10 @@ $EndComp
 $Comp
 L C C?
 U 1 1 5250B1A4
-P 5100 750
-F 0 "C?" H 5150 850 50  0000 L CNN
-F 1 "C" H 5150 650 50  0000 L CNN
-	1    5100 750 
+P 3000 4000
+F 0 "C?" H 3050 4100 50  0000 L CNN
+F 1 "C" H 3050 3900 50  0000 L CNN
+	1    3000 4000
 	1    0    0    -1  
 $EndComp
 $Comp
