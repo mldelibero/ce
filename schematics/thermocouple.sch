@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 12:15:21 AM EDT
+EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:08:15 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,7 +36,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 7 8
 Title ""
-Date "5 oct 2013"
+Date "6 oct 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -44,17 +44,279 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1550 2850 0    60   Input ~ 0
+Wire Wire Line
+	2000 2700 2400 2700
+Wire Wire Line
+	2400 3000 2000 3000
+Connection ~ 4500 3400
+Wire Wire Line
+	3600 3400 4850 3400
+Wire Wire Line
+	4500 3400 4500 3700
+Wire Wire Line
+	8200 3500 7900 3500
+Connection ~ 4500 2400
+Wire Wire Line
+	4900 1400 4500 1400
+Wire Wire Line
+	4500 1400 4500 2400
+Wire Wire Line
+	5350 3400 5700 3400
+Wire Wire Line
+	5700 2300 5700 1400
+Wire Wire Line
+	5700 2300 5600 2300
+Connection ~ 6500 1400
+Wire Wire Line
+	6900 1400 6200 1400
+Connection ~ 6500 2000
+Wire Wire Line
+	6500 2000 7900 2000
+Wire Wire Line
+	7900 2000 7900 1500
+Wire Wire Line
+	6500 1900 6500 2150
+Wire Wire Line
+	6500 2650 6500 2900
+Wire Wire Line
+	7900 3300 7900 2800
+Wire Wire Line
+	7900 2800 6500 2800
+Connection ~ 6500 2800
+Wire Wire Line
+	6900 3400 6200 3400
+Connection ~ 6500 3400
+Wire Wire Line
+	5600 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 3400
+Wire Wire Line
+	5700 1400 5400 1400
+Wire Wire Line
+	8200 1300 7900 1300
+Wire Wire Line
+	3600 2400 4600 2400
+Wire Wire Line
+	2400 2500 2000 2500
+Wire Wire Line
+	2000 2900 2400 2900
+$Comp
+L LTC1594CS U?
+U 1 1 5250B74F
+P 3000 2900
+F 0 "U?" H 3000 3550 60  0000 C CNN
+F 1 "LTC1594CS" H 3000 2250 60  0000 C CNN
+	1    3000 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5250B6EC
+P 7000 6700
+F 0 "#PWR?" H 7000 6700 40  0001 C CNN
+F 1 "AGND" H 7000 6630 50  0000 C CNN
+	1    7000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5250B6DC
+P 7400 6700
+F 0 "#PWR?" H 7400 6700 40  0001 C CNN
+F 1 "AGND" H 7400 6630 50  0000 C CNN
+	1    7400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5250B6CB
+P 4500 3700
+F 0 "#PWR?" H 4500 3700 40  0001 C CNN
+F 1 "AGND" H 4500 3630 50  0000 C CNN
+	1    4500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5250B670
+P 7000 6300
+F 0 "#PWR?" H 7000 6250 20  0001 C CNN
+F 1 "+12V" H 7000 6400 30  0000 C CNN
+	1    7000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5250B662
+P 7400 6300
+F 0 "#PWR?" H 7400 6430 20  0001 C CNN
+F 1 "-12V" H 7400 6400 30  0000 C CNN
+	1    7400 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5250B659
+P 7400 6500
+F 0 "C?" H 7450 6600 50  0000 L CNN
+F 1 "C" H 7450 6400 50  0000 L CNN
+	1    7400 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5250B64F
+P 7000 6500
+F 0 "C?" H 7050 6600 50  0000 L CNN
+F 1 "C" H 7050 6400 50  0000 L CNN
+	1    7000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5250B613
+P 7550 5100
+F 0 "#PWR?" H 7550 5050 20  0001 C CNN
+F 1 "+12V" H 7550 5200 30  0000 C CNN
+	1    7550 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12V #PWR?
+U 1 1 5250B606
+P 7550 6000
+F 0 "#PWR?" H 7550 6130 20  0001 C CNN
+F 1 "-12V" H 7550 6100 30  0000 C CNN
+	1    7550 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 5 1 5250B5D8
+P 7450 5550
+F 0 "U?" H 7500 5750 60  0000 C CNN
+F 1 "LM324" H 7600 5350 50  0000 C CNN
+	5    7450 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B2F1
+P 5150 1400
+F 0 "R?" V 5230 1400 50  0000 C CNN
+F 1 "R" V 5150 1400 50  0000 C CNN
+	1    5150 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B2EC
+P 5100 3400
+F 0 "R?" V 5180 3400 50  0000 C CNN
+F 1 "R" V 5100 3400 50  0000 C CNN
+	1    5100 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B2E0
+P 5950 3400
+F 0 "R?" V 6030 3400 50  0000 C CNN
+F 1 "R" V 5950 3400 50  0000 C CNN
+	1    5950 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B260
+P 5950 1400
+F 0 "R?" V 6030 1400 50  0000 C CNN
+F 1 "R" V 5950 1400 50  0000 C CNN
+	1    5950 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B1D5
+P 6500 3150
+F 0 "R?" V 6580 3150 50  0000 C CNN
+F 1 "R" V 6500 3150 50  0000 C CNN
+	1    6500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B1D0
+P 6500 1650
+F 0 "R?" V 6580 1650 50  0000 C CNN
+F 1 "R" V 6500 1650 50  0000 C CNN
+	1    6500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5250B1B0
+P 6500 2400
+F 0 "R?" V 6580 2400 50  0000 C CNN
+F 1 "R" V 6500 2400 50  0000 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5250B1A4
+P 5100 750
+F 0 "C?" H 5150 850 50  0000 L CNN
+F 1 "C" H 5150 650 50  0000 L CNN
+	1    5100 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 4 1 5250B13F
+P 9050 5550
+F 0 "U?" H 9100 5750 60  0000 C CNN
+F 1 "LM324" H 9200 5350 50  0000 C CNN
+	4    9050 5550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LM324 U?
+U 2 1 5250B13C
+P 7400 3400
+F 0 "U?" H 7450 3600 60  0000 C CNN
+F 1 "LM324" H 7550 3200 50  0000 C CNN
+	2    7400 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 3 1 5250B12B
+P 5100 2400
+F 0 "U?" H 5150 2600 60  0000 C CNN
+F 1 "LM324" H 5250 2200 50  0000 C CNN
+	3    5100 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L LM324 U?
+U 1 1 5250B10F
+P 7400 1400
+F 0 "U?" H 7450 1600 60  0000 C CNN
+F 1 "LM324" H 7550 1200 50  0000 C CNN
+	1    7400 1400
+	-1   0    0    -1  
+$EndComp
+Text HLabel 2000 2500 0    60   Input ~ 0
 CS_N
-Text HLabel 1550 2550 0    60   Input ~ 0
+Text HLabel 2000 2700 0    60   Input ~ 0
 SCLK
-Text HLabel 1550 2250 0    60   Output ~ 0
+Text HLabel 2000 3000 0    60   Output ~ 0
 MISO
-Text HLabel 1550 1950 0    60   Input ~ 0
+Text HLabel 2000 2900 0    60   Input ~ 0
 MOSI
-Text HLabel 9150 2050 2    60   Input ~ 0
+Text HLabel 8200 3500 2    60   Input ~ 0
 TC_in-
-Text HLabel 9150 1700 2    60   Input ~ 0
+Text HLabel 8200 1300 2    60   Input ~ 0
 TC_in+
-Connection ~ 7050 5100
 $EndSCHEMATC
