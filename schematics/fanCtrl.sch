@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 09:39:23 PM EDT
+EESchema Schematic File Version 2  date Sat 05 Oct 2013 10:01:09 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,34 +45,155 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
+	3100 1300 3000 1300
+Wire Wire Line
+	3700 2200 3700 1300
+Wire Wire Line
+	3700 2200 4000 2200
+Wire Wire Line
+	4000 2200 4700 2200
+Wire Wire Line
+	3000 1600 3200 1600
+Wire Wire Line
+	1100 1500 900  1500
+Connection ~ 4700 3000
+Wire Wire Line
+	1300 3000 4700 3000
+Wire Wire Line
+	4700 3000 7000 3000
+Wire Wire Line
+	5900 2300 5700 2300
+Wire Wire Line
+	3850 2550 3600 2550
+Wire Wire Line
+	3600 2550 3600 2800
+Wire Wire Line
 	9000 5200 9000 5500
 Wire Wire Line
 	8600 4800 8600 4600
 Wire Wire Line
 	9700 4300 9700 4600
-Connection ~ 6600 3000
 Wire Wire Line
-	4700 2400 4700 3000
+	4700 3000 4700 2400
 Wire Wire Line
-	4700 3000 8800 3000
+	6200 3000 6200 3200
 Wire Wire Line
-	6600 3000 6600 3200
+	6200 1600 6200 2100
 Wire Wire Line
-	6600 1600 6600 2100
+	6200 2500 6200 2800
 Wire Wire Line
-	6300 2300 5700 2300
-Wire Wire Line
-	8800 2800 6600 2800
-Wire Wire Line
-	6600 2800 6600 2500
-Wire Wire Line
-	6600 4100 6600 3700
+	6200 4100 6200 3700
 Wire Wire Line
 	9700 5800 9700 5500
 Wire Wire Line
 	9000 4800 9000 4600
 Wire Wire Line
 	8600 5200 8600 5500
+Wire Wire Line
+	4000 2300 4000 2200
+Wire Wire Line
+	4000 2200 4000 2100
+Connection ~ 4000 2200
+Wire Wire Line
+	4000 1300 4000 1600
+Wire Wire Line
+	6200 2800 7000 2800
+Wire Wire Line
+	7000 4500 1300 4500
+Wire Wire Line
+	4350 2700 4350 3450
+Wire Wire Line
+	4350 3450 1300 3450
+Wire Wire Line
+	900  1200 1100 1200
+Wire Wire Line
+	3000 1700 3200 1700
+Wire Wire Line
+	2000 2350 2000 2100
+Wire Wire Line
+	3700 1300 3600 1300
+$Comp
+L R R?
+U 1 1 5250C43E
+P 3350 1300
+F 0 "R?" V 3430 1300 50  0000 C CNN
+F 1 "R" V 3350 1300 50  0000 C CNN
+	1    3350 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5250C41A
+P 2000 2350
+F 0 "#PWR?" H 2000 2350 40  0001 C CNN
+F 1 "AGND" H 2000 2280 50  0000 C CNN
+	1    2000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L ADC0832 U?
+U 1 1 5250C3A9
+P 2050 1350
+F 0 "U?" H 2050 1450 70  0000 C CNN
+F 1 "ADC0832" H 2050 1251 70  0000 C CNN
+	1    2050 1350
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3200 1700 2    60   Input ~ 0
+SCLK
+Text HLabel 3200 1600 2    60   Input ~ 0
+CS_N
+Text HLabel 900  1200 0    60   Input ~ 0
+MISO
+Text HLabel 900  1500 0    60   Input ~ 0
+MOSI
+$Comp
+L R R?
+U 1 1 5250C289
+P 4350 2450
+F 0 "R?" V 4430 2450 50  0000 C CNN
+F 1 "R" V 4350 2450 50  0000 C CNN
+	1    4350 2450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 3000 0    60   Output ~ 0
+Current Measure
+$Comp
+L +12V #PWR?
+U 1 1 5250BFDD
+P 4000 1400
+F 0 "#PWR?" H 4000 1350 20  0001 C CNN
+F 1 "+12V" H 4000 1500 30  0000 C CNN
+	1    4000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L AGND #PWR?
+U 1 1 5250BFD0
+P 3600 2800
+F 0 "#PWR?" H 3600 2800 40  0001 C CNN
+F 1 "AGND" H 3600 2730 50  0000 C CNN
+	1    3600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 5250BFB3
+P 4000 2550
+F 0 "RV?" H 4000 2450 50  0000 C CNN
+F 1 "POT" H 4000 2550 50  0000 C CNN
+	1    4000 2550
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5250BF84
+P 4000 1850
+F 0 "R?" V 4080 1850 50  0000 C CNN
+F 1 "R" V 4000 1850 50  0000 C CNN
+	1    4000 1850
+	1    0    0    -1  
+$EndComp
 $Comp
 L -12V #PWR?
 U 1 1 5250BF15
@@ -157,37 +278,37 @@ $EndComp
 $Comp
 L R R?
 U 1 1 5250BE47
-P 6600 3450
-F 0 "R?" V 6680 3450 50  0000 C CNN
-F 1 "R" V 6600 3450 50  0000 C CNN
-	1    6600 3450
+P 6200 3450
+F 0 "R?" V 6280 3450 50  0000 C CNN
+F 1 "R" V 6200 3450 50  0000 C CNN
+	1    6200 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L AGND #PWR?
 U 1 1 5250BE3B
-P 6600 4100
-F 0 "#PWR?" H 6600 4100 40  0001 C CNN
-F 1 "AGND" H 6600 4030 50  0000 C CNN
-	1    6600 4100
+P 6200 4100
+F 0 "#PWR?" H 6200 4100 40  0001 C CNN
+F 1 "AGND" H 6200 4030 50  0000 C CNN
+	1    6200 4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L +12V #PWR?
 U 1 1 5250BDFB
-P 6600 1600
-F 0 "#PWR?" H 6600 1550 20  0001 C CNN
-F 1 "+12V" H 6600 1700 30  0000 C CNN
-	1    6600 1600
+P 6200 1600
+F 0 "#PWR?" H 6200 1550 20  0001 C CNN
+F 1 "+12V" H 6200 1700 30  0000 C CNN
+	1    6200 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L MOS_N Q?
 U 1 1 5250BDE8
-P 6500 2300
-F 0 "Q?" H 6510 2470 60  0000 R CNN
-F 1 "MOS_N" H 6510 2150 60  0000 R CNN
-	1    6500 2300
+P 6100 2300
+F 0 "Q?" H 6110 2470 60  0000 R CNN
+F 1 "MOS_N" H 6110 2150 60  0000 R CNN
+	1    6100 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -199,14 +320,14 @@ F 1 "LM324" H 5350 2100 50  0000 C CNN
 	1    5200 2300
 	1    0    0    -1  
 $EndComp
-Text HLabel 1400 2650 2    60   Input ~ 0
+Text HLabel 1300 3450 0    60   Input ~ 0
 FAN_IN
-Text HLabel 1400 2100 2    60   Output ~ 0
+Text HLabel 1300 4500 0    60   Output ~ 0
 TACH_OUT
-Text HLabel 8800 3400 0    60   Output ~ 0
+Text HLabel 7000 4500 2    60   Output ~ 0
 TACH
-Text HLabel 8800 3000 0    60   Output ~ 0
+Text HLabel 7000 3000 2    60   Output ~ 0
 PWR-
-Text HLabel 8800 2800 0    60   Output ~ 0
+Text HLabel 7000 2800 2    60   Output ~ 0
 PWR+
 $EndSCHEMATC
