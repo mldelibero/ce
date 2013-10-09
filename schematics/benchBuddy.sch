@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:04:27 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:14:52 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 4800 850  1850 1200
+S 4700 750  1850 1200
 U 5254B562
 F0 "PowerAdjustmentMonitor" 60
 F1 "PowerAdjustmentMonitor.sch" 60
