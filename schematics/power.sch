@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:41:11 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:54:15 PM EDT
 LIBS:power
 LIBS:power_addon
 LIBS:device
@@ -46,6 +46,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 10300 3700
+Wire Wire Line
+	10050 3700 10800 3700
+Wire Wire Line
+	10800 3700 10800 3950
+Wire Wire Line
+	9800 3100 9800 2950
+Connection ~ 10300 2950
+Wire Wire Line
+	9800 2950 10300 2950
+Wire Wire Line
+	10300 3700 10300 3500
 Wire Wire Line
 	7700 3700 7700 3400
 Wire Wire Line
@@ -93,6 +105,102 @@ Wire Wire Line
 	5800 2900 5800 3800
 Wire Wire Line
 	7200 3700 6800 3700
+Wire Wire Line
+	9450 3700 9400 3700
+Wire Wire Line
+	9400 3700 9400 3850
+Wire Wire Line
+	10300 3100 10300 2800
+Wire Wire Line
+	9500 2400 9400 2400
+Wire Wire Line
+	9400 2400 9400 2200
+Wire Wire Line
+	10850 2200 10850 2400
+Wire Wire Line
+	10850 2400 10100 2400
+Connection ~ 10300 2400
+$Comp
+L -12V #PWR?
+U 1 1 5254C377
+P 10800 3950
+F 0 "#PWR?" H 10800 4080 20  0001 C CNN
+F 1 "-12V" H 10800 4050 30  0000 C CNN
+	1    10800 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 5254C36D
+P 10850 2200
+F 0 "#PWR?" H 10850 2150 20  0001 C CNN
+F 1 "+12V" H 10850 2300 30  0000 C CNN
+	1    10850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5254C337
+P 10300 3300
+F 0 "C?" H 10350 3400 50  0000 L CNN
+F 1 "C" H 10350 3200 50  0000 L CNN
+	1    10300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5254C330
+P 10300 2600
+F 0 "C?" H 10350 2700 50  0000 L CNN
+F 1 "C" H 10350 2500 50  0000 L CNN
+	1    10300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5254C324
+P 9750 3700
+F 0 "L?" V 9800 3700 40  0000 C CNN
+F 1 "INDUCTOR" V 9850 3700 40  0000 C CNN
+	1    9750 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L INDUCTOR L?
+U 1 1 5254C311
+P 9800 2400
+F 0 "L?" V 9850 2400 40  0000 C CNN
+F 1 "INDUCTOR" V 9900 2400 40  0000 C CNN
+	1    9800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5254C2F1
+P 9800 3100
+F 0 "#PWR?" H 9800 3100 30  0001 C CNN
+F 1 "GND" H 9800 3030 30  0001 C CNN
+	1    9800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12P #PWR?
+U 1 1 5254C2D3
+P 9400 3850
+F 0 "#PWR?" H 9400 3980 20  0001 C CNN
+F 1 "-12P" H 9400 3950 30  0000 C CNN
+	1    9400 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L +12P #PWR?
+U 1 1 5254C2CD
+P 9400 2200
+F 0 "#PWR?" H 9400 2170 30  0001 C CNN
+F 1 "+12P" H 9400 2300 30  0000 C CNN
+	1    9400 2200
+	1    0    0    -1  
+$EndComp
 $Comp
 L +3.3V #PWR?
 U 1 1 5254C23E

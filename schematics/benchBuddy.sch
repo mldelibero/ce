@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:41:11 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:54:15 PM EDT
 LIBS:power
 LIBS:power_addon
 LIBS:device
@@ -46,6 +46,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+NoConn ~ 6500 3450
 $Sheet
 S 4700 750  1850 1200
 U 5254B562
