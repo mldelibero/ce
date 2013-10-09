@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Sat 05 Oct 2013 10:55:51 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:04:27 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,15 +29,14 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:relays
 LIBS:benchBuddy-cache
 EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
-Date "6 oct 2013"
+Date "9 oct 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +44,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Sheet
+S 4800 850  1850 1200
+U 5254B562
+F0 "PowerAdjustmentMonitor" 60
+F1 "PowerAdjustmentMonitor.sch" 60
+$EndSheet
 $Sheet
 S 10300 1000 500  5800
 U 524F79BB
@@ -78,7 +83,7 @@ F4 "FREQ" I L 7300 1900 60
 F5 "EN" I L 7300 1750 60 
 $EndSheet
 $Sheet
-S 1650 1600 1850 1200
+S 650  650  1850 1200
 U 524F793A
 F0 "power" 60
 F1 "power.sch" 60
