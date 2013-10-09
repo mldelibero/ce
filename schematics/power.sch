@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:38:47 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:41:11 PM EDT
 LIBS:power
 LIBS:power_addon
 LIBS:device
@@ -46,24 +46,17 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L +12P #PWR?
-U 1 1 5254C19E
-P 7150 1900
-F 0 "#PWR?" H 7150 1870 30  0001 C CNN
-F 1 "+12P" H 7150 2000 30  0000 C CNN
-	1    7150 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L -12P #PWR?
-U 1 1 5254C188
-P 7400 1900
-F 0 "#PWR?" H 7400 2030 20  0001 C CNN
-F 1 "-12P" H 7400 2000 30  0000 C CNN
-	1    7400 1900
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	7700 3700 7700 3400
+Wire Wire Line
+	6800 3900 7100 3900
+Wire Wire Line
+	7100 3900 7100 4200
+Connection ~ 4300 2300
+Wire Wire Line
+	4000 2500 4000 2300
+Wire Wire Line
+	4000 2300 4700 2300
 Wire Wire Line
 	7400 1900 7400 2800
 Wire Wire Line
@@ -90,6 +83,70 @@ Wire Wire Line
 	5500 2600 5800 2600
 Wire Wire Line
 	5500 2800 5800 2800
+Wire Wire Line
+	4300 2300 4300 2400
+Wire Wire Line
+	4300 2400 4700 2400
+Wire Wire Line
+	5500 2900 5800 2900
+Wire Wire Line
+	5800 2900 5800 3800
+Wire Wire Line
+	7200 3700 6800 3700
+$Comp
+L +3.3V #PWR?
+U 1 1 5254C23E
+P 7700 3400
+F 0 "#PWR?" H 7700 3360 30  0001 C CNN
+F 1 "+3.3V" H 7700 3510 30  0000 C CNN
+	1    7700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5254C224
+P 7450 3700
+F 0 "R?" V 7530 3700 50  0000 C CNN
+F 1 "R" V 7450 3700 50  0000 C CNN
+	1    7450 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5254C21C
+P 7100 4200
+F 0 "#PWR?" H 7100 4200 30  0001 C CNN
+F 1 "GND" H 7100 4130 30  0001 C CNN
+	1    7100 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5254C1F2
+P 4000 2500
+F 0 "#PWR?" H 4000 2500 30  0001 C CNN
+F 1 "GND" H 4000 2430 30  0001 C CNN
+	1    4000 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12P #PWR?
+U 1 1 5254C19E
+P 7150 1900
+F 0 "#PWR?" H 7150 1870 30  0001 C CNN
+F 1 "+12P" H 7150 2000 30  0000 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12P #PWR?
+U 1 1 5254C188
+P 7400 1900
+F 0 "#PWR?" H 7400 2030 20  0001 C CNN
+F 1 "-12P" H 7400 2000 30  0000 C CNN
+	1    7400 1900
+	1    0    0    -1  
+$EndComp
 $Comp
 L FUSE F?
 U 1 1 5254B967
@@ -129,10 +186,10 @@ $EndComp
 $Comp
 L SWITCH_INV_MSM SW?
 U 1 1 5254B887
-P 5100 4000
-F 0 "SW?" H 4901 4150 50  0000 C CNN
-F 1 "SWITCH_INV_MSM" H 4951 3851 50  0000 C CNN
-	1    5100 4000
+P 6300 3800
+F 0 "SW?" H 6101 3950 50  0000 C CNN
+F 1 "SWITCH_INV_MSM" H 6151 3651 50  0000 C CNN
+	1    6300 3800
 	1    0    0    -1  
 $EndComp
 $Comp
