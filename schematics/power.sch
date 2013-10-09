@@ -1,5 +1,6 @@
-EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:14:52 PM EDT
+EESchema Schematic File Version 2  date Tue 08 Oct 2013 10:38:47 PM EDT
 LIBS:power
+LIBS:power_addon
 LIBS:device
 LIBS:transistors
 LIBS:conn
@@ -29,6 +30,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:relays
 LIBS:benchBuddy-cache
 EELAYER 25  0
 EELAYER END
@@ -45,11 +47,20 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L -12V #PWR?
-U 1 1 5254B991
+L +12P #PWR?
+U 1 1 5254C19E
+P 7150 1900
+F 0 "#PWR?" H 7150 1870 30  0001 C CNN
+F 1 "+12P" H 7150 2000 30  0000 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L -12P #PWR?
+U 1 1 5254C188
 P 7400 1900
 F 0 "#PWR?" H 7400 2030 20  0001 C CNN
-F 1 "-12V" H 7400 2000 30  0000 C CNN
+F 1 "-12P" H 7400 2000 30  0000 C CNN
 	1    7400 1900
 	1    0    0    -1  
 $EndComp
@@ -86,15 +97,6 @@ P 6050 2800
 F 0 "F?" H 6150 2850 40  0000 C CNN
 F 1 "FUSE" H 5950 2750 40  0000 C CNN
 	1    6050 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L +12V #PWR?
-U 1 1 5254B947
-P 7150 1900
-F 0 "#PWR?" H 7150 1850 20  0001 C CNN
-F 1 "+12V" H 7150 2000 30  0000 C CNN
-	1    7150 1900
 	1    0    0    -1  
 $EndComp
 $Comp
